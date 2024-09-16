@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 
 from Events.models import Events
 
@@ -22,4 +22,6 @@ def save(request):
         location = request.POST.get(location)
         attendes = request.POST.get(attendes)
         form = Events(name=name,description=description,date=date,time=time,location=location,attendes=attendes)
+        form.save()
+        return redirect("/")
     return render(request, 'event_list.html')
