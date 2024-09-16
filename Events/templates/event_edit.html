@@ -1,5 +1,43 @@
-{% extends 'base.html' %}
+<!-- {% extends 'base.html' %}
 
 {% block content %}
 
-{% endblock %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <h2 class="text-white bg-dark text-center p-3 m">Edit Student Details</h2>
+            <br>
+            <form action="" method="">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" value="{{ event.name }}" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" class="form-control mt-1" name="date" value="{{ event.date }}" required>
+                </div>
+                
+                 <div class="form-group">
+                    <input type="text" class="form-control mt-1" name="time" value="{{ event.time }}" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" class="form-control mt-1" name="location" value="{{ event.location }}" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control mt-1" name="description" value="{{ event.description }}" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control mt-1" name="attendes" value="{{ event.attendes }}" required>
+                </div>
+                
+                <div class="d-grid gap-2 mt-2">
+                    <button type="submit" class="btn btn-info">Update</button>
+                    
+                </div>
+            </form>
+        </div>
+
+{% endblock %} -->
