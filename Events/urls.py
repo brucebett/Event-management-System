@@ -21,7 +21,9 @@ from.import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('eventedit', views.eventedit, name='eventedit'),
-    path('eventlist', views.eventlist, name='eventlist'),
+    path('eventedit/<id>', views.eventedit, name='eventedit'),
+    # path('edit/<id>', views.eventedit, name='eventedit'),
+    path('delete/<id>', views.deleteEvent, name='deleteEvent'),
+    path('eventlist/', views.eventlist, name='eventlist'),
     path('save', views.save, name='save')
 ]
