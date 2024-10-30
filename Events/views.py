@@ -42,7 +42,7 @@ def eventedit(request, id):
         editForm.attendees = attendees
         editForm.save()
         return redirect("/")
-    event = Events.objects.get(id=id)
+    event = Events.objects.all()
     context = {'event': event}
     return render(request, 'event_edit.html', context)
 

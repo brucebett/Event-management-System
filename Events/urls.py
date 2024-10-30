@@ -24,7 +24,7 @@ urlpatterns = [
     path('eventlist/', views.eventlist, name='eventlist'),
     path('save/', views.save, name='save'),
     path('eventedit/<id>', views.eventedit, name='eventedit'),
-    path('edit/<id>', views.eventedit, name='eventedit'),
+    # path('edit/<id>', views.eventedit, name='eventedit'),
     path('delete/<id>', views.deleteEvent, name='deleteEvent')
     
 ]
