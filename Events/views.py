@@ -47,8 +47,9 @@ def eventedit(request, id):
     return render(request, 'event_edit.html', context)
 
 def eventlist(request):
-
-    return render(request, 'event_list.html')
+    data = Events.objects.all()
+    context = {'data': data}
+    return render(request, 'event_list.html', context )
 
 
 
