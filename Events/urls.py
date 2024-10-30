@@ -25,5 +25,5 @@ urlpatterns = [
     # path('edit/<id>', views.eventedit, name='eventedit'),
     path('delete/<id>', views.deleteEvent, name='deleteEvent'),
     path('eventlist/', views.eventlist, name='eventlist'),
-    path('save', views.save, name='save')
+    path('save/', views.save, name='save')
 ]
